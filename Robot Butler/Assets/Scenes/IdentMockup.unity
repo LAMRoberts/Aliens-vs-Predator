@@ -935,7 +935,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 920d5f5b54bdc694b986230074bb9f2c, type: 3}
     m_FontSize: 60
-    m_FontStyle: 2
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 300
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6920a43bcf4fca4fa1549c026709349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DesiredText: Circuits Don't Have Souls
+  DesiredText: ENDLESS ENHANCEMENT
   TimeTillNextLetter: 0.05
   TimeTillAppearStart: 6
   TimeTakenToAppear: 2
