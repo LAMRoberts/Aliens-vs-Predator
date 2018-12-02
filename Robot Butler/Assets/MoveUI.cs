@@ -39,6 +39,5 @@ public class MoveUI : MonoBehaviour
     {
         MoveSpeedSet = true;
         MoveSpeedPerSec = Vector3.Distance(transform.position, TargetTransform.position) / TimeToTarget;
-        Debug.Log(TargetTransform.gameObject.name + ": " + MoveSpeedPerSec);
     }
 }
