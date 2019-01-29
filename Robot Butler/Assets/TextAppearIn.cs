@@ -24,11 +24,19 @@ public class TextAppearIn : MonoBehaviour
 
     private float AlphaGainPerSec;
 
+    [SerializeField]
+    private bool backwards = false;
+
 
     // Use this for initialization
     void Start()
     {
         AlphaGainPerSec = 1 / TimeTakenToAppear;
+
+        if(backwards)
+        {
+
+        }
     }
 
     // Update is called once per frame
@@ -39,19 +47,34 @@ public class TextAppearIn : MonoBehaviour
         {
             GetComponent<Text>().color += new Color(0, 0, 0, AlphaGainPerSec * Time.deltaTime);
 
-            if(LettersAdded < DesiredText.Length)
+            if (backwards)
             {
-                TimeSinceLastLetter += Time.deltaTime;
-            }
+                if (LettersAdded < DesiredText.Length)
+                {
+                    TimeSinceLastLetter += Time.deltaTime;
+                }
 
-            if(TimeSinceLastLetter > TimeTillNextLetter)
+                if (TimeSinceLastLetter > TimeTillNextLetter)
+                {
+                    GetComponent<Text>().text = DesiredText[DesiredText.Length - (LettersAdded + 1)] + GetComponent<Text>().text;
+                    LettersAdded++;
+                    TimeSinceLastLetter = 0;
+                }
+            }
+            else
             {
-                GetComponent<Text>().text += DesiredText[LettersAdded];
-                LettersAdded++;
-                TimeSinceLastLetter = 0;
-            }
+                if (LettersAdded < DesiredText.Length)
+                {
+                    TimeSinceLastLetter += Time.deltaTime;
+                }
 
+                if (TimeSinceLastLetter > TimeTillNextLetter)
+                {
+                    GetComponent<Text>().text += DesiredText[LettersAdded];
+                    LettersAdded++;
+                    TimeSinceLastLetter = 0;
+                }
+            }
         }
-
     }
 }

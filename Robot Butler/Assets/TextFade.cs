@@ -6,29 +6,42 @@ using UnityEngine.UI;
 public class TextFade : MonoBehaviour
 {
     [SerializeField]
-    private float TimeTillFadeStart;
+    private bool fade;
+    [SerializeField]
+    private bool appear;
 
     [SerializeField]
-    private float TimeTakenToFade;
+    private float TimeTillEffectStart;
+
+    [SerializeField]
+    private float TimeTakenToChange;
 
     private float TotalTime = 0;
 
-    private float AlphaFadePerSec;
+    private float AlphaChangePerSec;
+
+
 
 	// Use this for initialization
 	void Start ()
 	{
-	    AlphaFadePerSec = 1 / TimeTakenToFade;
+        AlphaChangePerSec = 1 / TimeTakenToChange;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
 	    TotalTime += Time.deltaTime;
-	    if (TotalTime > TimeTillFadeStart)
+	    if (TotalTime > TimeTillEffectStart)
 	    {
-            GetComponent<Text>().color -= new Color(0, 0, 0, AlphaFadePerSec * Time.deltaTime);
+            if (fade)
+            {
+                GetComponent<Text>().color -= new Color(0, 0, 0, AlphaChangePerSec * Time.deltaTime);
+            }
+            if(appear)
+            {
+                GetComponent<Text>().color += new Color(0, 0, 0, AlphaChangePerSec * Time.deltaTime);
+            }
 	    }
-
 	}
 }
