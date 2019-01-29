@@ -113,6 +113,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &318333097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318333098}
+  - component: {fileID: 318333100}
+  - component: {fileID: 318333099}
+  m_Layer: 5
+  m_Name: BackGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &318333098
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318333097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 707080901}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &318333099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318333097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &318333100
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318333097}
+  m_CullTransparentMesh: 0
 --- !u!1 &503206105
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,11 +208,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 707080901}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32.5, y: 30}
+  m_AnchoredPosition: {x: -41.4, y: 0.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &536759672
@@ -203,7 +272,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 920d5f5b54bdc694b986230074bb9f2c, type: 3}
-    m_FontSize: 100
+    m_FontSize: 90
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
@@ -214,7 +283,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: lectronics
+  m_Text: LECTRONICS
 --- !u!222 &536759675
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -234,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeTillFadeStart: 1
-  TimeTakenToFade: 1
+  TimeTakenToFade: 2
 --- !u!1 &554699405
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +330,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 707080901}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -353,6 +422,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 400}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 318333098}
   - {fileID: 1647743878}
   - {fileID: 1825807372}
   - {fileID: 503206106}
@@ -394,11 +464,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 707080901}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 57.5, y: 30}
+  m_AnchoredPosition: {x: 47.6, y: 0.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1349925207
@@ -434,7 +504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 230, y: 25}
+  m_AnchoredPosition: {x: 235, y: 25}
   m_SizeDelta: {x: 350, y: 250}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1349925209
@@ -458,7 +528,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 920d5f5b54bdc694b986230074bb9f2c, type: 3}
-    m_FontSize: 100
+    m_FontSize: 90
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 1
@@ -469,7 +539,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: entient
+  m_Text: ENTIENT
 --- !u!222 &1349925210
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -489,7 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeTillFadeStart: 1
-  TimeTakenToFade: 1
+  TimeTakenToFade: 2
 --- !u!1 &1417670898
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,7 +946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75645cde86f135c4995543101d3d24c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeTillParticleSpawn: 3.5
+  TimeTillParticleSpawn: 4
 --- !u!1 &1647743877
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1647743878
 RectTransform:
   m_ObjectHideFlags: 0
@@ -906,12 +976,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 707080901}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -100, y: 150}
-  m_SizeDelta: {x: -400, y: 200}
+  m_AnchoredPosition: {x: -95, y: 140}
+  m_SizeDelta: {x: -460, y: 200}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1647743879
 MonoBehaviour:
@@ -964,7 +1034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6920a43bcf4fca4fa1549c026709349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DesiredText: ENDLESS ENHANCEMENT
+  DesiredText: 13 CHARACTERS
   TimeTillNextLetter: 0.05
   TimeTillAppearStart: 6
   TimeTakenToAppear: 2
@@ -1076,7 +1146,7 @@ RectTransform:
   m_Children:
   - {fileID: 1349925208}
   m_Father: {fileID: 707080901}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1128,9 +1198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2b98251ee71304fa6ddf8932a8fb65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeTillMoveStart: 2.5
+  TimeTillMoveStart: 3.5
   TargetTransform: {fileID: 1825807372}
-  TimeToTarget: 1
+  TimeToTarget: 0.25
 --- !u!114 &1754366231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,9 +1212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2b98251ee71304fa6ddf8932a8fb65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeTillMoveStart: 4.5
+  TimeTillMoveStart: 5
   TargetTransform: {fileID: 503206106}
-  TimeToTarget: 1
+  TimeToTarget: 0.5
 --- !u!1 &1825807371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1241,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 707080901}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1210,7 +1280,7 @@ RectTransform:
   - {fileID: 536759673}
   - {fileID: 1607440525}
   m_Father: {fileID: 707080901}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1262,9 +1332,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2b98251ee71304fa6ddf8932a8fb65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeTillMoveStart: 2.5
+  TimeTillMoveStart: 3.5
   TargetTransform: {fileID: 554699406}
-  TimeToTarget: 1
+  TimeToTarget: 0.25
 --- !u!114 &1855709223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,6 +1346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2b98251ee71304fa6ddf8932a8fb65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeTillMoveStart: 4.5
+  TimeTillMoveStart: 5
   TargetTransform: {fileID: 1302485444}
-  TimeToTarget: 1
+  TimeToTarget: 0.5
