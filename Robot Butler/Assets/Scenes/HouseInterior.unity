@@ -142,7 +142,7 @@ Transform:
   - {fileID: 583656320}
   - {fileID: 1233258661}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &46250992
 Prefab:
@@ -470,7 +470,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4327616238742352, guid: 67c11decbdb27b64aae99e48b91316f1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.0198
+      value: -0.032
       objectReference: {fileID: 0}
     - target: {fileID: 4327616238742352, guid: 67c11decbdb27b64aae99e48b91316f1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2167,7 +2167,7 @@ Transform:
   - {fileID: 279965663}
   - {fileID: 306119917}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &513860378
 Prefab:
@@ -4313,7 +4313,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9c34b45942f512745a513f5af958dcf9, type: 2}
+  - {fileID: 2100000, guid: 6e0d0acf0efc1aa43b9d273f2b4f62db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6444,7 +6444,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9c34b45942f512745a513f5af958dcf9, type: 2}
+  - {fileID: 2100000, guid: 6e0d0acf0efc1aa43b9d273f2b4f62db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6482,6 +6482,7 @@ GameObject:
   - component: {fileID: 1852011479}
   - component: {fileID: 1852011478}
   - component: {fileID: 1852011481}
+  - component: {fileID: 1852011482}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6890,7 +6891,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9c34b45942f512745a513f5af958dcf9, type: 2}
+  - {fileID: 2100000, guid: 6e0d0acf0efc1aa43b9d273f2b4f62db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7372,5 +7373,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
