@@ -15,6 +15,8 @@ public class ListOfVehicleTypes : MonoBehaviour
     public bool bus;
     public bool rig;
 
+    public bool personA;
+
     private void Start()
     {
         if (car)
@@ -57,6 +59,11 @@ public class ListOfVehicleTypes : MonoBehaviour
         {
             GameObject AI_Rig = (GameObject)Resources.Load("AI_Rig", typeof(GameObject));
             vehicleTypes.Add(AI_Rig);
+        }
+
+        if (personA)
+        {
+            GameObject peoplesA = (GameObject)Resources.Load("peoplesA", typeof(GameObject));
         }
     }
 
