@@ -87,8 +87,8 @@ MonoBehaviour:
   taxi: 1
   van: 1
   wagon: 1
-  bus: 1
-  rig: 1
+  bus: 0
+  rig: 0
 --- !u!114 &114692751674764008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0b146f93f085046b07c87bd6486760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 0
+  timeBetweenSpawns: 1
   carMaxSpeed: 50
   carHasLifetime: 0
   carLifetime: 0
