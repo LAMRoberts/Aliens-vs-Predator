@@ -2091,9 +2091,8 @@ GameObject:
   m_Component:
   - component: {fileID: 397091446}
   - component: {fileID: 397091448}
-  - component: {fileID: 397091447}
   m_Layer: 0
-  m_Name: CloseUpFace
+  m_Name: CloseUpFaceCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2112,13 +2111,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &397091447
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 397091445}
-  m_Enabled: 1
 --- !u!20 &397091448
 Camera:
   m_ObjectHideFlags: 0
@@ -4053,7 +4045,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 1
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -8829,8 +8821,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wobble_z_amout: 20
   wobble_z_interval: 0.02
-  wobble_y_amout: 0
-  wobble_y_interval: 0
 --- !u!1 &1016470327
 GameObject:
   m_ObjectHideFlags: 0
