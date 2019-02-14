@@ -100,13 +100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0b146f93f085046b07c87bd6486760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 1
+  timeBetweenSpawns: 0
   carMaxSpeed: 50
   carHasLifetime: 0
   carLifetime: 0
   carHasMaxDistance: 0
   maxDistance: 0
-  separation: 1
+  separation: 0
   timeSinceLastSpawn: 0
   Vehicles: {fileID: 114538539264298352}
   distanceToLastSpawned: 10
