@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public float timeBetweenSpawns = 0.0f;
     public float carMaxSpeed = 0.0f;
+    public float carBrakingSpeed = 0.0f;
     public bool carHasLifetime = false;
     public float carLifetime = 0.0f;
     public bool carHasMaxDistance = false;
@@ -59,7 +60,9 @@ public class SpawnManager : MonoBehaviour
 
             ai = vehicle.GetComponent<VehicleAI>();
 
-            ai.SetSpeed(carMaxSpeed);
+            ai.SetMaxSpeed(carMaxSpeed);
+
+            ai.SetBrakingSpeed(carBrakingSpeed);
 
             if (carHasLifetime)
             {
