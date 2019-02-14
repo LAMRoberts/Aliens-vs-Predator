@@ -9,6 +9,8 @@ public class VehicleAI : MonoBehaviour
     [SerializeField]
     private float currentSpeed = 0.0f;
     [SerializeField]
+    private float brakingSpeed = 0.0f;
+    [SerializeField]
     private float lifetime = 3600.0f;
     [SerializeField]
     private float maxDistance = 0.0f;
@@ -37,12 +39,9 @@ public class VehicleAI : MonoBehaviour
 
         if (blockers.Count > 0)
         {
-            foreach (GameObject blocker in blockers)
+            if (currentSpeed > 0.0f)
             {
-                if (currentSpeed > 0.0f)
-                {
-                    currentSpeed -= currentSpeed * 0.05f; ;
-                }
+                currentSpeed -= currentSpeed * brakingSpeed;
             }
         }
         else
@@ -54,9 +53,14 @@ public class VehicleAI : MonoBehaviour
         }
     }
 
-    public void SetSpeed(float value)
+    public void SetMaxSpeed(float value)
     {
         maxSpeed = value;
+    }
+
+    public void SetBrakingSpeed(float value)
+    {
+        brakingSpeed = value;
     }
 
     public void SetTimeUntilDeath(float value)
