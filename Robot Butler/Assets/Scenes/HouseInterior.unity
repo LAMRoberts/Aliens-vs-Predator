@@ -2092,7 +2092,7 @@ GameObject:
   - component: {fileID: 397091446}
   - component: {fileID: 397091448}
   m_Layer: 0
-  m_Name: CloseUpFace
+  m_Name: CloseUpFaceCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
