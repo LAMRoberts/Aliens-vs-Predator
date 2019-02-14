@@ -8,7 +8,7 @@ public class AIBraking : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" || other.gameObject.tag == "AIVehicle")
         {
-            GetComponentInParent<VehicleAI>().AddBlocker(other.gameObject);
+            //GetComponentInParent<VehicleAI>().AddBlocker(other.gameObject);
         }
     }
 
@@ -16,7 +16,7 @@ public class AIBraking : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" || other.gameObject.tag == "AIVehicle")
         {
-            GetComponentInParent<VehicleAI>().RemoveBlocker(other.gameObject);
+            //GetComponentInParent<VehicleAI>().RemoveBlocker(other.gameObject);
         }
     }
 }
