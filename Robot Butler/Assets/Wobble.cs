@@ -8,6 +8,7 @@ public class Wobble : MonoBehaviour
     private float wobble_z_amout;
     [SerializeField]
     private float wobble_z_interval;
+
     private bool flip_z = false;
     private float z_time = 0;
     private bool z_initial = true;
@@ -26,6 +27,15 @@ public class Wobble : MonoBehaviour
                 z_initial = false;
                 wobble_z_amout *= 2;
             }
+        }
+
+        if (flip_z)
+        {
+            transform.Rotate(Vector3.right, wobble_z_amout * Time.deltaTime);
+        }
+        else
+        {
+            transform.Rotate(Vector3.right, -wobble_z_amout * Time.deltaTime);
         }
     }
 }
