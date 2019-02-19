@@ -13,7 +13,7 @@ public class VehicleAI : MonoBehaviour
     [SerializeField]
     private float lifetime = 3600.0f;
     [SerializeField]
-    private float maxDistance = 0.0f;
+    private float maxDistance = 10000.0f;
     [SerializeField]
     private float distance = 0.0f;
     [SerializeField]
@@ -39,16 +39,40 @@ public class VehicleAI : MonoBehaviour
 
         if (blockers.Count > 0)
         {
-            if (currentSpeed > 0.0f)
+            if (tag == "AIVehicle")
             {
-                currentSpeed -= currentSpeed * brakingSpeed;
+                if (currentSpeed > 0.0f)
+                {
+                    currentSpeed -= currentSpeed * brakingSpeed;
+                }
+            }
+            else if (tag == "AIPerson")
+            {
+                if (GetComponent<HumanAnimer>().speed != 0.0f)
+                {
+                    GetComponent<HumanAnimer>().speed = 0.0f;
+
+                    GetComponent<Animator>().SetFloat("walkSpeedMultiplier", 0.0f);
+                }
             }
         }
         else
         {
-            if (currentSpeed < maxSpeed)
+            if (tag == "AIVehicle")
             {
-                currentSpeed += (maxSpeed - currentSpeed) * 0.01f;
+                if (currentSpeed < maxSpeed)
+                {
+                    currentSpeed += (maxSpeed - currentSpeed) * 0.01f;
+                }
+            }
+            else if (tag == "AIPerson")
+            {
+                if (GetComponent<HumanAnimer>().speed != 2.0f)
+                {
+                    GetComponent<HumanAnimer>().speed = 2.0f;
+
+                    GetComponent<Animator>().SetFloat("walkSpeedMultiplier", 1.0f);
+                }
             }
         }
     }

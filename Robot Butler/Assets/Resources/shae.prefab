@@ -321,9 +321,11 @@ GameObject:
   - component: {fileID: 4381496366797358}
   - component: {fileID: 95654484520528386}
   - component: {fileID: 114306604914584996}
+  - component: {fileID: 114715110835874618}
+  - component: {fileID: 65540245776266212}
   m_Layer: 0
   m_Name: shae
-  m_TagString: Untagged
+  m_TagString: AIPerson
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -961,6 +963,23 @@ GameObject:
   m_Layer: 0
   m_Name: mixamorig:LeftHandMiddle2
   m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1774927832601840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4343969106695840}
+  - component: {fileID: 65787730833161646}
+  - component: {fileID: 114326112877432858}
+  m_Layer: 11
+  m_Name: BrakeTrigger (4)
+  m_TagString: BrakeTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1619,6 +1638,19 @@ Transform:
   m_Father: {fileID: 4346120800424720}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4343969106695840
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774927832601840}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.95, z: -0.48}
+  m_LocalScale: {x: 0.84994, y: 2.01038, z: 0.18718}
+  m_Children: []
+  m_Father: {fileID: 4381496366797358}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4346120800424720
 Transform:
   m_ObjectHideFlags: 1
@@ -1668,7 +1700,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1265188369739632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.236607, y: 341.6588, z: -191.57628}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4922911237174484}
@@ -1679,6 +1711,7 @@ Transform:
   - {fileID: 4818385514201118}
   - {fileID: 4294686169730228}
   - {fileID: 4288676554932094}
+  - {fileID: 4343969106695840}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2194,6 +2227,30 @@ Transform:
   m_Father: {fileID: 4684906301491190}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65540245776266212
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265188369739632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.5, z: 0.5}
+  m_Center: {x: 0, y: 1.7, z: 0}
+--- !u!65 &65787730833161646
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774927832601840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.95, y: 1.8, z: 5}
+  m_Center: {x: 0, y: 0, z: 5.3}
 --- !u!95 &95654484520528386
 Animator:
   serializedVersion: 3
@@ -2224,6 +2281,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!114 &114326112877432858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774927832601840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef9c6cd22929c54ab7ba1f186e82baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114715110835874618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265188369739632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6094cf6c19b0f5b49b8f4d42f4a641e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 1
+  currentSpeed: 0
+  brakingSpeed: 1
+  lifetime: 3600
+  maxDistance: 10000
+  distance: 0
+  blockers: []
+  distanceToRear: 1
+  distanceToFront: 1
 --- !u!137 &137001557243154990
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
