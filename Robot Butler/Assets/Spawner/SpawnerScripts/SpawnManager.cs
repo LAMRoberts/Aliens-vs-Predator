@@ -17,6 +17,8 @@ public class SpawnManager : MonoBehaviour
     public bool carHasMaxDistance = false;
     public float maxDistance = 0.0f;
     public float separation = 0.0f;
+    public bool carHasRandomSpawnOffset = false;
+    public float randomSpawnOffset = 0.0f;
 
     private GameObject vehicle;
     private VehicleAI ai;
@@ -83,6 +85,11 @@ public class SpawnManager : MonoBehaviour
         if (readyToSpawn && distanceToLastSpawned > necessaryDistanceToSpawn)
         {
             vehicle = Instantiate(tempVehicle, transform);
+
+            if (carHasRandomSpawnOffset)
+            {
+                vehicle.transform.position += new Vector3(Random.Range((-randomSpawnOffset), randomSpawnOffset), 0.0f, Random.Range((-randomSpawnOffset), randomSpawnOffset));
+            }
 
             ai = vehicle.GetComponent<VehicleAI>();
 
