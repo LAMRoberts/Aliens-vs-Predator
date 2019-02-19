@@ -26,9 +26,14 @@ public class MagazineEvents : MonoBehaviour
 
     private bool animPlayed = false;
 
+    private Vector3 startRot;
+    private Vector3 walkingRot = new Vector3(0, 92.923f, 0);
+    private bool coroutinePlaying = false;
+
     private void Start()
     {
         transform.position = origin;
+        startRot = transform.eulerAngles;
         anim = GetComponent<Animation>();
     }
     
@@ -46,10 +51,24 @@ public class MagazineEvents : MonoBehaviour
                 transform.position = Vector3.MoveTowards(
                     transform.position, target, 
                     Time.deltaTime * moveSpeed);
-                transform.LookAt(target);
 
                 if (transform.position == target)
-                    state = State.HOMEWORK;
+                {
+                    if (!coroutinePlaying)
+                    {
+                        StartCoroutine(WaitForNewState(State.HOMEWORK, 0.5f));
+                        coroutinePlaying = true;
+                    }
+                    Vector3 rot = Vector3.Lerp(transform.eulerAngles, startRot, Time.deltaTime * 10.0f);
+                    transform.eulerAngles = rot;
+                }
+                else
+                {
+                    Vector3 rot = Vector3.Lerp(transform.eulerAngles, walkingRot, Time.deltaTime * 10.0f);
+                    transform.eulerAngles = rot;
+                    anim.Play("RobotWalk");
+                }
+
                 break;
             case State.HOMEWORK:
                 if (!animPlayed)
@@ -83,5 +102,14 @@ public class MagazineEvents : MonoBehaviour
         magazines[currentMagazine].gameObject.AddComponent<Rigidbody>();
 
         currentMagazine++;
+    }
+
+    IEnumerator WaitForNewState(State newState, float time)
+    {
+        yield return new WaitForSeconds(time);
+        state = newState;
+        Debug.Log("new state " + state);
+
+        coroutinePlaying = false;
     }
 }
