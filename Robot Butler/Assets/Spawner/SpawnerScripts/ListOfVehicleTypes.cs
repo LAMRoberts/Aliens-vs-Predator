@@ -15,7 +15,12 @@ public class ListOfVehicleTypes : MonoBehaviour
     public bool bus;
     public bool rig;
 
-    public bool personA;
+    public bool liam;
+    public bool malcolm;
+    public bool regina;
+    public bool remy;
+    public bool shae;
+    public bool stefani;
 
     private void Start()
     {
@@ -61,9 +66,39 @@ public class ListOfVehicleTypes : MonoBehaviour
             vehicleTypes.Add(AI_Rig);
         }
 
-        if (personA)
+        if (liam)
         {
-            GameObject peoplesA = (GameObject)Resources.Load("peoplesA", typeof(GameObject));
+            GameObject AI_liam = (GameObject)Resources.Load("liam", typeof(GameObject));
+            vehicleTypes.Add(AI_liam);
+        }
+
+        if (malcolm)
+        {
+            GameObject AI_malcolm = (GameObject)Resources.Load("malcolm", typeof(GameObject));
+            vehicleTypes.Add(AI_malcolm);
+        }
+
+        if (regina)
+        {
+            GameObject AI_regina = (GameObject)Resources.Load("regina", typeof(GameObject));
+            vehicleTypes.Add(AI_regina);
+        }
+        if (remy)
+        {
+            GameObject AI_remy = (GameObject)Resources.Load("remy", typeof(GameObject));
+            vehicleTypes.Add(AI_remy);
+        }
+
+        if (shae)
+        {
+            GameObject AI_shae = (GameObject)Resources.Load("shae", typeof(GameObject));
+            vehicleTypes.Add(AI_shae);
+        }
+
+        if (stefani)
+        {
+            GameObject AI_stefani = (GameObject)Resources.Load("stefani", typeof(GameObject));
+            vehicleTypes.Add(AI_stefani);
         }
     }
 

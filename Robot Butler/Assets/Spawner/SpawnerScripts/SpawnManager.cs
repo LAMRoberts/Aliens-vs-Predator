@@ -5,6 +5,11 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public float timeBetweenSpawns = 0.0f;
+    public bool carHasTimeBetweenSpawnsRange = false;
+    public float carTimeBetweenSpawnMin = 0.0f;
+    public float carTimeBetweenSpawnMax = 0.0f;
+    private bool readyToSpawn = false;
+    private float timeBetweenSpawnRNG = 0.0f;
     public float carMaxSpeed = 0.0f;
     public float carBrakingSpeed = 0.0f;
     public bool carHasLifetime = false;
@@ -15,16 +20,16 @@ public class SpawnManager : MonoBehaviour
 
     private GameObject vehicle;
     private VehicleAI ai;
-    private GameObject tempVehicle;
     [SerializeField]
+    private GameObject tempVehicle;
     private float timeSinceLastSpawn = 10000.0f;
     public ListOfVehicleTypes Vehicles;
+    [SerializeField]
     private List<GameObject> VehicleTypes;
-    [SerializeField]
     private float distanceToLastSpawned = 10000.0f;
-    [SerializeField]
     private float necessaryDistanceToSpawn = 0.0f;
     private bool nextVehiclePicked = false;
+
 
     private void Start()
     {
@@ -36,8 +41,6 @@ public class SpawnManager : MonoBehaviour
 
     void Update ()
     {
-        timeSinceLastSpawn += Time.deltaTime;
-
         if (!nextVehiclePicked)
         {
             tempVehicle = VehicleTypes[Random.Range(0, VehicleTypes.Count)];
@@ -54,7 +57,30 @@ public class SpawnManager : MonoBehaviour
             nextVehiclePicked = true;
         }
 
-        if (timeSinceLastSpawn > timeBetweenSpawns && distanceToLastSpawned > necessaryDistanceToSpawn)
+        timeSinceLastSpawn += Time.deltaTime;
+
+        if (carHasTimeBetweenSpawnsRange)
+        {
+            if (timeBetweenSpawnRNG == 0.0f)
+            {
+                timeBetweenSpawnRNG = Random.Range(carTimeBetweenSpawnMin, carTimeBetweenSpawnMax);
+            }
+
+            if (timeSinceLastSpawn > timeBetweenSpawnRNG)
+            {
+                readyToSpawn = true;
+            }
+        }
+        else
+        {
+            if (timeSinceLastSpawn > timeBetweenSpawns)
+            {
+                readyToSpawn = true;
+            }
+        }
+
+        
+        if (readyToSpawn && distanceToLastSpawned > necessaryDistanceToSpawn)
         {
             vehicle = Instantiate(tempVehicle, transform);
 
@@ -73,9 +99,14 @@ public class SpawnManager : MonoBehaviour
             {
                 ai.SetMaxDistance(maxDistance);
             }
-            
-            timeSinceLastSpawn = 0.0f;
 
+            if (carHasTimeBetweenSpawnsRange)
+            {
+                timeBetweenSpawnRNG = 0.0f;
+            }
+
+            timeSinceLastSpawn = 0.0f;
+            readyToSpawn = false;
             nextVehiclePicked = false;
         }
 

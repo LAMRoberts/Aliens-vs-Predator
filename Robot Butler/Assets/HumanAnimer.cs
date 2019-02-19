@@ -14,6 +14,7 @@ public class HumanAnimer : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        transform.Translate(transform.forward * speed * Time.deltaTime);
+        Vector3 move = new Vector3(0f, 0f, transform.forward.sqrMagnitude * speed);
+        transform.Translate(move * Time.deltaTime);
 	}
 }

@@ -6,8 +6,12 @@ public class AIBraking : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "AIVehicle" || other.gameObject.tag == "TrafficStopper")
-        //if (other.gameObject.tag != "Terrain" || other.gameObject.tag == "Untagged")
+        if (transform.parent.tag == "AIPerson")
+        {
+            GetComponentInParent<VehicleAI>().AddBlocker(other.gameObject);
+        }
+
+        if (other.transform.tag == "AIVehicle" || other.transform.tag == "AIPerson" || other.transform.tag == "TrafficStopper")
         {
             GetComponentInParent<VehicleAI>().AddBlocker(other.gameObject);
         }
@@ -15,8 +19,12 @@ public class AIBraking : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "AIVehicle" || other.gameObject.tag == "TrafficStopper")
-        //if (other.gameObject.tag != "Terrain" || other.gameObject.tag == "Untagged")
+        if (transform.parent.tag == "AIPerson")
+        {
+            GetComponentInParent<VehicleAI>().RemoveBlocker(other.gameObject);
+        }
+
+        if (other.transform.tag == "AIVehicle" || other.transform.tag == "AIPerson" || other.transform.tag == "TrafficStopper")
         {
             GetComponentInParent<VehicleAI>().RemoveBlocker(other.gameObject);
         }
