@@ -83,6 +83,7 @@ public class ListOfVehicleTypes : MonoBehaviour
             GameObject AI_regina = (GameObject)Resources.Load("regina", typeof(GameObject));
             vehicleTypes.Add(AI_regina);
         }
+
         if (remy)
         {
             GameObject AI_remy = (GameObject)Resources.Load("remy", typeof(GameObject));

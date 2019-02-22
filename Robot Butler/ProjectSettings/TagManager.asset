@@ -10,6 +10,7 @@ TagManager:
   - Terrain
   - AIPerson
   - TrafficStopper
+  - Crossing
   layers:
   - Default
   - TransparentFX
