@@ -1157,6 +1157,7 @@ GameObject:
   - component: {fileID: 114445220604000394}
   - component: {fileID: 114667706982240578}
   - component: {fileID: 65280110535093240}
+  - component: {fileID: 54423939280826828}
   m_Layer: 0
   m_Name: stefani
   m_TagString: AIPerson
@@ -1939,8 +1940,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1835390614438432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.95, z: -0.48}
-  m_LocalScale: {x: 0.84994, y: 2.01038, z: 0.18718}
+  m_LocalPosition: {x: 0, y: 1.8, z: -0.48}
+  m_LocalScale: {x: 0.116722256, y: 1.6917454, z: 0.18718}
   m_Children: []
   m_Father: {fileID: 4728644289005012}
   m_RootOrder: 8
@@ -2227,6 +2228,21 @@ Transform:
   m_Father: {fileID: 4119831150007978}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54423939280826828
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983571584489142}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!65 &65280110535093240
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2280,6 +2296,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef9c6cd22929c54ab7ba1f186e82baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tags:
+  - AIPerson
+  - AIVehicle
+  - TrafficStopper
+  - Crossing
 --- !u!114 &114445220604000394
 MonoBehaviour:
   m_ObjectHideFlags: 1
