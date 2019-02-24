@@ -2166,8 +2166,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734527531463486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 248.33206, y: 341.5, z: -224.46631}
+  m_LocalRotation: {x: -0, y: -0.82230574, z: -0, w: 0.56904596}
+  m_LocalPosition: {x: 50.42, y: 341.63913, z: -260.275}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4252261751431948}
@@ -2180,7 +2180,7 @@ Transform:
   - {fileID: 4679840343649444}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -110.633, z: 0}
 --- !u!4 &4949192191025912
 Transform:
   m_ObjectHideFlags: 1
@@ -2204,7 +2204,7 @@ Animator:
   m_GameObject: {fileID: 1734527531463486}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: d33bc097c927ba34e974482246159fb0, type: 3}
-  m_Controller: {fileID: 9100000, guid: 79f17cd9b0938ff4cb2210842ad48e64, type: 2}
+  m_Controller: {fileID: 9100000, guid: 888d716176afd504694b77b2f58a8830, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2237,6 +2237,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a6a624783ec494f8c09d0a9e3bf411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPoint: 1
+  canPickUp: 1
+  canDissapoint: 0
 --- !u!137 &137046923874994430
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
