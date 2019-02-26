@@ -1074,7 +1074,7 @@ Camera:
   m_GameObject: {fileID: 135680506}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -1088,7 +1088,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 90
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1112,13 +1112,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 135680506}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.46, y: 1, z: -15.09}
+  m_LocalRotation: {x: 0.0025741789, y: 0.99113435, z: -0.0014739941, w: 0.1328306}
+  m_LocalPosition: {x: 60.3, y: 1.29, z: -11.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.20700002, y: 164.73401, z: 0.27}
 --- !u!1001 &139136022
 Prefab:
   m_ObjectHideFlags: 0
@@ -8716,7 +8716,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400038, guid: 827141a5fbd670a4886a7a365d90d038, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.86871
+      value: 66.56
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: 827141a5fbd670a4886a7a365d90d038, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13488,7 +13488,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4389249440244022, guid: e5505f256e5102946a9e5c638ab100c7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 21.790936
+      value: 60.93
       objectReference: {fileID: 0}
     - target: {fileID: 4389249440244022, guid: e5505f256e5102946a9e5c638ab100c7, type: 2}
       propertyPath: m_LocalPosition.y
