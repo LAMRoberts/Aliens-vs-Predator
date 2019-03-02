@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CarTypes
+  - AIVehicle
+  - BrakeTrigger
+  - Terrain
+  - AIPerson
+  - TrafficStopper
+  - Crossing
   layers:
   - Default
   - TransparentFX
