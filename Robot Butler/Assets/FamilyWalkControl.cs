@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class FamilyWalkControl : MonoBehaviour
 {
-    public bool canPoint, canPickUp, canDissapoint;
+    public bool canPoint, canPickUp, canDissapoint, canWalk;
+
+    public bool ANIMATIONFREEZE;
 
     bool walk = false;
 	// Use this for initialization
@@ -15,11 +17,14 @@ public class FamilyWalkControl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		if(Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            walk = !walk;
-            GetComponent<Animator>().SetBool("Walk", walk);
-            GetComponent<HumanAnimer>().forceWalk = walk;
+            if (canWalk)
+            {
+                walk = !walk;
+                GetComponent<Animator>().SetBool("Walk", walk);
+                GetComponent<HumanAnimer>().forceWalk = walk;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -38,6 +43,12 @@ public class FamilyWalkControl : MonoBehaviour
         {
             if (canDissapoint)
                 GetComponent<Animator>().SetTrigger("Dissapoint");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (ANIMATIONFREEZE)
+                GetComponent<Animator>().speed = 0;
         }
     }
 }
