@@ -2363,6 +2363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  forceWalk: 0
 --- !u!137 &137019016804322748
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
