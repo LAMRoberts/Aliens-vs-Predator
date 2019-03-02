@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Emissive
+  m_Name: Emissive 1
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
@@ -77,5 +77,5 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1.3041189, g: 1.0583165, b: 0.90127593, a: 1}
+    - _EmissionColor: {r: 0.59607846, g: 0.7137255, b: 0.85882354, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
