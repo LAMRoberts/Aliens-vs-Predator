@@ -2297,6 +2297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  forceWalk: 0
 --- !u!114 &114326112877432858
 MonoBehaviour:
   m_ObjectHideFlags: 1
