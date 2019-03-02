@@ -6,6 +6,8 @@ public class FamilyWalkControl : MonoBehaviour
 {
     public bool canPoint, canPickUp, canDissapoint;
 
+    public bool ANIMATIONFREEZE;
+
     bool walk = false;
 	// Use this for initialization
 	void Start () {
@@ -38,6 +40,12 @@ public class FamilyWalkControl : MonoBehaviour
         {
             if (canDissapoint)
                 GetComponent<Animator>().SetTrigger("Dissapoint");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (ANIMATIONFREEZE)
+                GetComponent<Animator>().speed = 0;
         }
     }
 }
