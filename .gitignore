@@ -56,3 +56,5 @@ Robot Butler/Assets/Audio/Other_mechanic\.mp3\.meta
 Robot Butler/Assets/Audio/Other_phone_ringing\.wav\.meta
 
 Robot Butler/Assets/Prefabs/ParticleSystems\.meta
+
+*.meta
