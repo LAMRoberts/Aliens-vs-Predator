@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000222, guid: c953b46a5fa1a2545852b0d26e21ba5e,
+  m_LightingDataAsset: {fileID: 112000224, guid: c953b46a5fa1a2545852b0d26e21ba5e,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -1377,7 +1377,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244359513}
   m_LocalRotation: {x: -0.015818002, y: 0.9523707, z: -0.050152797, w: -0.30037412}
-  m_LocalPosition: {x: -3.231789, y: 1.4424652, z: 6.2832937}
+  m_LocalPosition: {x: -3.48334, y: 2.8124652, z: 4.1977415}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 940817572}
@@ -5320,7 +5320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &925369796
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7960,7 +7960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1355515810
 AudioListener:
   m_ObjectHideFlags: 0
@@ -9717,7 +9717,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1580001139}
-  - component: {fileID: 1580001141}
   - component: {fileID: 1580001140}
   - component: {fileID: 1580001142}
   m_Layer: 0
@@ -9734,15 +9733,15 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1580001138}
-  m_LocalRotation: {x: -0, y: -0.94992, z: -0, w: -0.31249344}
-  m_LocalPosition: {x: -2.8125, y: 0, z: -0.3169}
+  m_LocalRotation: {x: -0, y: -0.99124444, z: 0, w: -0.1320399}
+  m_LocalPosition: {x: -2.78, y: 0, z: -0.459}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 1765744440}
   - {fileID: 92508747}
   m_Father: {fileID: 6022473}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -216.41899, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -217.243, z: 0}
 --- !u!111 &1580001140
 Animation:
   m_ObjectHideFlags: 0
@@ -9751,31 +9750,15 @@ Animation:
   m_GameObject: {fileID: 1580001138}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
+  m_Animation: {fileID: 7400000, guid: 2c8a0a964b998514a8498cb58216e7d4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2c8a0a964b998514a8498cb58216e7d4, type: 2}
+  - {fileID: 7400000, guid: cf386e8ecc16cd94685a79babc870c91, type: 2}
+  - {fileID: 7400000, guid: 6d03b61217049024bb880b272afc9c7d, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!95 &1580001141
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 95724376108617620, guid: f4049791220998845ab3e89ed1c8df21,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1580001138}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 0f2986aea6d928b4db71943822ccac4a, type: 3}
-  m_Controller: {fileID: 9100000, guid: 779b988bd544294458839b283f869076, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1580001142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9787,6 +9770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc2d7db9df7b8146b92bdbb0d717011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  homework: {fileID: 671404427}
   magazines:
   - {fileID: 1752090469}
   - {fileID: 607252001}
@@ -10149,7 +10133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1648334076
 Transform:
   m_ObjectHideFlags: 0
