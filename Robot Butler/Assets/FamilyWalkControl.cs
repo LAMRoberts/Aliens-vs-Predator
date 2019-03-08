@@ -13,6 +13,8 @@ public class FamilyWalkControl : MonoBehaviour
     void Start()
     {
         GetComponent<FamilyWalkControl>().walk = false;
+
+        ActivateHandShake();
     }
 
     // Update is called once per frame
