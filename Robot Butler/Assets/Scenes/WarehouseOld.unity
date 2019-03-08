@@ -10679,7 +10679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1625068971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13966,6 +13966,30 @@ Prefab:
     - target: {fileID: 1558063125280538, guid: 1fa9493ce8fb0d54fa2fd3890f6a7322, type: 2}
       propertyPath: m_Name
       value: SERobot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253009373678496, guid: 1fa9493ce8fb0d54fa2fd3890f6a7322, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769377783524440, guid: 1fa9493ce8fb0d54fa2fd3890f6a7322, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225513776841226, guid: 1fa9493ce8fb0d54fa2fd3890f6a7322, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.9061018
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225513776841226, guid: 1fa9493ce8fb0d54fa2fd3890f6a7322, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.3487
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412792656661572, guid: 1fa9493ce8fb0d54fa2fd3890f6a7322, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.9061018
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412792656661572, guid: 1fa9493ce8fb0d54fa2fd3890f6a7322, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.316
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fa9493ce8fb0d54fa2fd3890f6a7322, type: 2}
