@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class RotateCamera : MonoBehaviour
 {
+    public Vector3 axes = Vector3.up;
+
     public float speed = 1;
 	void Update ()
     {
-        transform.Rotate(Vector3.up * (speed * Time.deltaTime));
+        transform.Rotate(axes * (speed * Time.deltaTime));
     }
 }
