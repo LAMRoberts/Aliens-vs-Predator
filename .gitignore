@@ -25,7 +25,7 @@ ExportedObj/
 *.opendb
 
 # Unity3D generated meta files
-*.pidb.meta
+*.pidb.meta 
 *.pdb.meta
 
 # Unity3D Generated File On Crash Reports
@@ -34,3 +34,27 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Robot Butler/Assets/ImportedAssets/NatureManufacture Assets - Trials Not Full Resolution/Advanced Foliage Pack/Unity grass/Unity Grass Models/Materials/M_Unity_Grass_forest_heather_01.mat.meta
+Robot Butler/Assets/ImportedAssets/NatureManufacture Assets - Trials Not Full Resolution/Advanced Foliage Pack/Unity grass/Unity Grass Models/Prefabs/prefab_unity_grass_forest_heather_01.prefab
+
+Robot Butler/Assets/Audio\.meta
+
+Robot Butler/Assets/Audio/Ambient_city\.wav\.meta
+
+Robot Butler/Assets/Audio/Ambient_mall\.mp3\.meta
+
+Robot Butler/Assets/Audio/Footsteps_loose_stone\.wav\.meta
+
+Robot Butler/Assets/Audio/Footsteps_trainers_varied\.wav\.meta
+
+Robot Butler/Assets/Audio/Footsteps_wood\.wav\.meta
+
+Robot Butler/Assets/Audio/Other_beep\.wav\.meta
+
+Robot Butler/Assets/Audio/Other_mechanic\.mp3\.meta
+
+Robot Butler/Assets/Audio/Other_phone_ringing\.wav\.meta
+
+Robot Butler/Assets/Prefabs/ParticleSystems\.meta
+
+*.meta
