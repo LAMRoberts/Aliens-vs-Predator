@@ -9,13 +9,14 @@ public class FamilyWalkControl : MonoBehaviour
     public bool ANIMATIONFREEZE;
 
     bool walk = false;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         GetComponent<FamilyWalkControl>().walk = false;
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
@@ -29,8 +30,8 @@ public class FamilyWalkControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if(canPoint)
-            GetComponent<Animator>().SetTrigger("Point");
+            if (canPoint)
+                GetComponent<Animator>().SetTrigger("Point");
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -50,5 +51,10 @@ public class FamilyWalkControl : MonoBehaviour
             if (ANIMATIONFREEZE)
                 GetComponent<Animator>().speed = 0;
         }
+    }
+
+    public void ActivateHandShake()
+    {
+        GetComponent<Animator>().SetTrigger("HandShake");
     }
 }
