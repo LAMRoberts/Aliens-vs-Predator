@@ -24,7 +24,7 @@ public class unityTimeScaler : MonoBehaviour {
             }
         }
 
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             if (timesscale > 1)
             {
