@@ -13,6 +13,9 @@ public class FamilyWalkControl : MonoBehaviour
     void Start()
     {
         GetComponent<FamilyWalkControl>().walk = false;
+        GetComponent<Animator>().SetTrigger("Dissapoint");
+
+        //  ActivateHandShake();
     }
 
     // Update is called once per frame
