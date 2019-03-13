@@ -13,7 +13,7 @@ public class FamilyWalkControl : MonoBehaviour
     void Start()
     {
         GetComponent<FamilyWalkControl>().walk = false;
-        GetComponent<Animator>().SetTrigger("Dissapoint");
+            //  GetComponent<Animator>().SetTrigger("Dissapoint");
 
         //  ActivateHandShake();
     }
@@ -47,6 +47,12 @@ public class FamilyWalkControl : MonoBehaviour
         {
             if (canDissapoint)
                 GetComponent<Animator>().SetTrigger("Dissapoint");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            if (canDissapoint)
+                GetComponent<Animator>().SetTrigger("Victory");
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
