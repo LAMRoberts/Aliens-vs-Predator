@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -518,6 +518,72 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 294149776}
   m_CullTransparentMesh: 0
+--- !u!1001 &352877531
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.00224
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.001257
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0135824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.057744343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.5548579
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.13099042
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8195363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 2.907
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -67.785
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 16.209
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074328088269276, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9bb22e64508fb6a40b812f020a224428, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &489973095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1464,43 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125807270}
   m_Mesh: {fileID: 4300010, guid: 9a4f32d31844a3043ae3aca46c2a43bc, type: 3}
+--- !u!1 &1127248692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1937037970381390, guid: 9bb22e64508fb6a40b812f020a224428,
+    type: 2}
+  m_PrefabInternal: {fileID: 352877531}
+--- !u!95 &1127248693
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127248692}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e856e009563c3184e92dcbe098e7e9af, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1127248694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127248692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c6680ea73adaf4c879e8a93117543c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldAxis: 1
+  axes: {x: 0, y: 1, z: 0}
+  speed: 10
 --- !u!1 &1135043243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,7 +1719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1314867859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1626,12 +1729,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1314867858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd4cb435094478c4c84c2864a7b35eef, type: 3}
+  m_Script: {fileID: 11500000, guid: 80c6680ea73adaf4c879e8a93117543c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   worldAxis: 1
   axes: {x: 0, y: 1, z: 0}
-  speed: 10
+  speed: 1
 --- !u!4 &1314867860
 Transform:
   m_ObjectHideFlags: 0
@@ -2016,7 +2119,7 @@ Animator:
   m_GameObject: {fileID: 1866708982}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 80dba4d0c051c454dbf74ada4414d3a6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2e39d55eb2094a94da4365e8229f6db6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2049,7 +2152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866708982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd4cb435094478c4c84c2864a7b35eef, type: 3}
+  m_Script: {fileID: 11500000, guid: 80c6680ea73adaf4c879e8a93117543c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   worldAxis: 1
