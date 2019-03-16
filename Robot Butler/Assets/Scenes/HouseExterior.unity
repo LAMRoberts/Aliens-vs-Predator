@@ -4926,7 +4926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &472486097
 AudioListener:
   m_ObjectHideFlags: 0
@@ -12835,7 +12835,7 @@ Prefab:
     - target: {fileID: 218068999128182048, guid: 8a9478e12be929245a258c1b21d7f55b,
         type: 2}
       propertyPath: m_TreeBillboardDistance
-      value: 40
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1254672387088128, guid: 8a9478e12be929245a258c1b21d7f55b, type: 2}
       propertyPath: m_TagString
@@ -15810,7 +15810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1560124577
 MonoBehaviour:
   m_ObjectHideFlags: 0
