@@ -10096,8 +10096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5d53b7bbfc5f94c974c0a60ea55660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redEyes: {fileID: 2800000, guid: e9b5318b38e5c794a8eef40e50c4de0a, type: 3}
-  deadEyes: {fileID: 2800000, guid: a572590e35a15a14a8ac22986b6bee8b, type: 3}
 --- !u!1 &1539490175
 GameObject:
   m_ObjectHideFlags: 0
