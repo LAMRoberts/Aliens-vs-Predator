@@ -88,7 +88,12 @@ ModelImporter:
     4300022: pasted__pCube10
     4300024: pasted__pCube3
     4300026: pasted__pCube3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn2
+    second: {fileID: 2100000, guid: 3e9b56370a8a1104da95649faa0d84e9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
