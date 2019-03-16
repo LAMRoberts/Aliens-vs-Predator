@@ -30,9 +30,11 @@ public class MagazineEvents : MonoBehaviour
     private Vector3 walkingRot = new Vector3(0, 92.923f, 0);
     private bool coroutinePlaying = false;
 
+    public GameObject close_up_camera;
+
     private void Start()
     {
-        transform.position = origin;
+        transform.localPosition = origin;
         startRot = transform.eulerAngles;
         anim = GetComponent<Animation>();
     }
@@ -48,11 +50,11 @@ public class MagazineEvents : MonoBehaviour
                     state = State.MOVING;
                 break;
             case State.MOVING:
-                transform.position = Vector3.MoveTowards(
-                    transform.position, target, 
+                transform.localPosition = Vector3.MoveTowards(
+                    transform.localPosition, target, 
                     Time.deltaTime * moveSpeed);
 
-                if (transform.position == target)
+                if (transform.localPosition == target)
                 {
                     if (!coroutinePlaying)
                     {
@@ -75,6 +77,7 @@ public class MagazineEvents : MonoBehaviour
                 {
                     anim.Play("LookAtMagazine");
                     animPlayed = true;
+                    StartCoroutine(RobotBreakdown(5.0f));
                 }
                 break;
         }
@@ -111,5 +114,12 @@ public class MagazineEvents : MonoBehaviour
         Debug.Log("new state " + state);
 
         coroutinePlaying = false;
+    }
+
+    IEnumerator RobotBreakdown(float start_in_sec)
+    {
+        yield return new WaitForSeconds(start_in_sec);
+        Camera.main.gameObject.SetActive(false);
+        close_up_camera.SetActive(true);
     }
 }
