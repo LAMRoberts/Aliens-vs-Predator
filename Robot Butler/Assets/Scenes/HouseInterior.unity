@@ -7672,7 +7672,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1220502358}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41a9d74c90448f1419fa3cffe529d3df, type: 3}
   m_Name: 
@@ -9563,6 +9563,24 @@ Transform:
   m_Father: {fileID: 10294843}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1521813760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100098, guid: 320b1c2af77554f99a1658df4a6d3d5c,
+    type: 3}
+  m_PrefabInternal: {fileID: 1220502357}
+--- !u!114 &1521813763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1521813760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ca537a7b37ca347b23504c5b48d031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redEyes: {fileID: 2800000, guid: e9b5318b38e5c794a8eef40e50c4de0a, type: 3}
+  deadEyes: {fileID: 2800000, guid: 2919fc7aa87476e409a7a6cb8f195e02, type: 3}
 --- !u!1 &1539490175
 GameObject:
   m_ObjectHideFlags: 0
