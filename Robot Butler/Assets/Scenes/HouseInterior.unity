@@ -973,7 +973,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1b644c77b152c094ba6044f8f46350ce, type: 2}
+  - {fileID: 2100000, guid: 64ca98da5b760f94891717884f89bb75, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4412,7 +4412,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 8f890d0ab5cad8b42b9c11cc2551385a, type: 2}
+  - {fileID: 2100000, guid: 1059854f3d4b2bb4081c9cb81bb4cc08, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6441,7 +6441,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1b644c77b152c094ba6044f8f46350ce, type: 2}
+  - {fileID: 2100000, guid: 64ca98da5b760f94891717884f89bb75, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9019,7 +9019,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1b644c77b152c094ba6044f8f46350ce, type: 2}
+  - {fileID: 2100000, guid: 64ca98da5b760f94891717884f89bb75, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9714,7 +9714,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1b644c77b152c094ba6044f8f46350ce, type: 2}
+  - {fileID: 2100000, guid: 64ca98da5b760f94891717884f89bb75, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10096,8 +10096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5d53b7bbfc5f94c974c0a60ea55660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redEyes: {fileID: 2800000, guid: e9b5318b38e5c794a8eef40e50c4de0a, type: 3}
-  deadEyes: {fileID: 2800000, guid: a572590e35a15a14a8ac22986b6bee8b, type: 3}
 --- !u!1 &1539490175
 GameObject:
   m_ObjectHideFlags: 0
@@ -12362,7 +12360,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 8f890d0ab5cad8b42b9c11cc2551385a, type: 2}
+  - {fileID: 2100000, guid: 1059854f3d4b2bb4081c9cb81bb4cc08, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
