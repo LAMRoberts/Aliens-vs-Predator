@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Wobble : MonoBehaviour
 {
-    [SerializeField]
-    private float wobble_z_amout;
-    [SerializeField]
-    private float wobble_z_interval;
+    public float wobble_z_amout;
+    public float wobble_z_interval;
 
     private bool flip_z = false;
     private float z_time = 0;

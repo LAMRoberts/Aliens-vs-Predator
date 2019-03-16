@@ -30,7 +30,11 @@ public class MagazineEvents : MonoBehaviour
     private Vector3 walkingRot = new Vector3(0, 92.923f, 0);
     private bool coroutinePlaying = false;
 
+    //breakdown stuff
     public GameObject close_up_camera;
+    public FlickerEyes flickerEyes;
+    public GameObject SmokeFX;
+    public Wobble wobble;
 
     private void Start()
     {
@@ -77,7 +81,7 @@ public class MagazineEvents : MonoBehaviour
                 {
                     anim.Play("LookAtMagazine");
                     animPlayed = true;
-                    StartCoroutine(RobotBreakdown(5.0f));
+                    StartCoroutine(RobotBreakdown(3.5f));
                 }
                 break;
         }
@@ -119,7 +123,12 @@ public class MagazineEvents : MonoBehaviour
     IEnumerator RobotBreakdown(float start_in_sec)
     {
         yield return new WaitForSeconds(start_in_sec);
+
         Camera.main.gameObject.SetActive(false);
         close_up_camera.SetActive(true);
+        SmokeFX.SetActive(true);
+
+        flickerEyes.enabled = true;
+        wobble.wobble_z_amout = 15;
     }
 }
