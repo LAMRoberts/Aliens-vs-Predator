@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.28512976, g: 0.32961744, b: 0.3858605, a: 1}
+  m_Sun: {fileID: 2135281491}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1615,7 +1615,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4595748776342474, guid: 8707309ab37b2984c9ce0d256e6cf5d1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4.778
+      value: 5.791
       objectReference: {fileID: 0}
     - target: {fileID: 4595748776342474, guid: 8707309ab37b2984c9ce0d256e6cf5d1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6880,6 +6880,10 @@ MonoBehaviour:
   - {fileID: 0}
   anchorPoint: {fileID: 131776828}
   moveSpeed: 1
+  close_up_camera: {fileID: 0}
+  flickerEyes: {fileID: 0}
+  SmokeFX: {fileID: 0}
+  wobble: {fileID: 0}
 --- !u!1 &1233258660
 GameObject:
   m_ObjectHideFlags: 0
@@ -10485,6 +10489,11 @@ Prefab:
       propertyPath: m_Name
       value: cotf_door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23168933635534032, guid: d58eb0219a9cf0a42bbca2d1e31bf196,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c569041ae07eeda49bf512eb5ac2a50a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d58eb0219a9cf0a42bbca2d1e31bf196, type: 2}
   m_IsPrefabAsset: 0
@@ -10657,7 +10666,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2093030152}
-  m_LocalRotation: {x: 0.044150807, y: 0.53429943, z: -0.027960612, w: 0.8436783}
+  m_LocalRotation: {x: 0.043897793, y: 0.541663, z: -0.028341694, w: 0.83897024}
   m_LocalPosition: {x: -3.9874468, y: 2.851827, z: 7.7957363}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
