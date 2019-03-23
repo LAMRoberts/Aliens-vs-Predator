@@ -24,7 +24,7 @@ public class IdentCameraZoom : MonoBehaviour
 
     private void Start()
     {
-       cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+       cam = Camera.main;
     }
 
     public void StartZoom()
