@@ -1574,7 +1574,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244359513}
-  m_LocalRotation: {x: 0.0000000028812788, y: 0.0000011026858, z: 0.0017453283, w: 0.99999845}
+  m_LocalRotation: {x: 9.604268e-10, y: 0.000001117587, z: -1.0824673e-15, w: 1}
   m_LocalPosition: {x: 0.14979745, y: 0.021263927, z: 0.070063636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1716,7 +1716,7 @@ MonoBehaviour:
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
-    Dutch: 0.2
+    Dutch: 0
   m_ComponentOwner: {fileID: 940817572}
 --- !u!1 &257978088
 GameObject:
