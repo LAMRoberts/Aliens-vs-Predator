@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 5df77b96a7f8488499dbdb4f141f4a76
+=======
+guid: e046ff6ee8853ed43b1632521e02dd4f
+>>>>>>> master
 =======
 guid: e046ff6ee8853ed43b1632521e02dd4f
 >>>>>>> master
@@ -16,7 +20,12 @@ TrueTypeFontImporter:
   fontNames:
   - Elemental End
 <<<<<<< HEAD
+<<<<<<< HEAD
   fallbackFontReferences: []
+=======
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c1f28b68393ff054c8f5a658e973b342, type: 3}
+>>>>>>> master
 =======
   fallbackFontReferences:
   - {fileID: 12800000, guid: c1f28b68393ff054c8f5a658e973b342, type: 3}
