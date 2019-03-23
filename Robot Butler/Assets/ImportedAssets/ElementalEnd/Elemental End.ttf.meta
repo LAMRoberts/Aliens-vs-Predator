@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: c0d6ea72e6d2d0147a581ce330f24ae1
+=======
 guid: c1f28b68393ff054c8f5a658e973b342
+>>>>>>> master
+=======
+guid: c1f28b68393ff054c8f5a658e973b342
+>>>>>>> master
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +19,16 @@ TrueTypeFontImporter:
   fontName: Elemental End
   fontNames:
   - Elemental End
+<<<<<<< HEAD
+<<<<<<< HEAD
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5df77b96a7f8488499dbdb4f141f4a76, type: 3}
+=======
   fallbackFontReferences: []
+>>>>>>> master
+=======
+  fallbackFontReferences: []
+>>>>>>> master
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

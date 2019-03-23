@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: a47877e6de144b2449c590b69bd25bff
+=======
 guid: 688238f94d959314fb851952abeb6c6a
+>>>>>>> master
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -59,6 +63,10 @@ ModelImporter:
     2300000: pCube39
     3300000: pCube39
     4300000: pCube39
+<<<<<<< HEAD
+    9500000: //RootNode
+=======
+>>>>>>> master
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -110,8 +118,13 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+<<<<<<< HEAD
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+=======
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
+>>>>>>> master
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -136,7 +149,11 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+<<<<<<< HEAD
+  animationType: 2
+=======
   animationType: 0
+>>>>>>> master
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

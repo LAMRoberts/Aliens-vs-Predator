@@ -24096,6 +24096,34 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 0.9985258
       objectReference: {fileID: 0}
+    - target: {fileID: 4610915864487122, guid: 641d3d5203b94af4c93801075550b69f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610915864487122, guid: 641d3d5203b94af4c93801075550b69f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.407
+      objectReference: {fileID: 0}
+    - target: {fileID: 137802337154324472, guid: 641d3d5203b94af4c93801075550b69f,
+        type: 2}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137802337154324472, guid: 641d3d5203b94af4c93801075550b69f,
+        type: 2}
+      propertyPath: m_SkinnedMotionVectors
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137802337154324472, guid: 641d3d5203b94af4c93801075550b69f,
+        type: 2}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137802337154324472, guid: 641d3d5203b94af4c93801075550b69f,
+        type: 2}
+      propertyPath: m_Quality
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641d3d5203b94af4c93801075550b69f, type: 2}
   m_IsPrefabAsset: 0
