@@ -7,6 +7,8 @@ public class FamilyWalkControl : MonoBehaviour
     public bool canPoint, canPickUp, canDissapoint, canWalk;
 
     public bool ANIMATIONFREEZE;
+    public Transform magazine;
+    public Transform head;
 
     bool walk = false;
     // Use this for initialization
@@ -21,12 +23,26 @@ public class FamilyWalkControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (magazine != null)
+        {
+            Debug.Log("Looking at magazine");
+            head.LookAt(magazine);
+        }
+
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (canWalk)
             {
                 walk = !walk;
-                GetComponent<Animator>().SetBool("Walk", walk);
+                if (gameObject.name == "Mum")
+                {
+                    GetComponent<Animator>().SetBool("LookAtMag", walk);
+                    GetComponent<Animator>().SetBool("Walk", walk);
+                }
+                else
+                {
+                    GetComponent<Animator>().SetBool("Walk", walk);
+                }
                 GetComponent<HumanAnimer>().forceWalk = walk;
             }
         }
