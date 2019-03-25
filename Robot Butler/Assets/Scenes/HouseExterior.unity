@@ -6388,8 +6388,8 @@ MonoBehaviour:
   - {fileID: 1273736524}
   - {fileID: 973390397}
   distance: 0.01
-  positionSpeed: 0.2
-  rotationSpeed: 0.2
+  positionSpeed: 0.05
+  rotationSpeed: 0.205
 --- !u!81 &598779491
 AudioListener:
   m_ObjectHideFlags: 0

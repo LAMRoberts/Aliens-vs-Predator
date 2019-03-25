@@ -18,21 +18,18 @@ public class CityscapeCameraMovement : MonoBehaviour
 
         transform.position = target.position;
         transform.rotation = target.rotation;
+
+        go = true;
     }
 
     // Update is called once per frame
     void Update ()
     {
-        if (Input.GetKey("c"))
-        {
-            go = true;
-        }
-
 		if (go)
         {
             if (Vector3.Distance(transform.position, target.position) > distance)
             {
-                transform.position = Vector3.MoveTowards(transform.position, target.position, positionSpeed);
+                transform.position = Vector3.Lerp(transform.position, target.position, positionSpeed);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, rotationSpeed);
 
                 Debug.Log("moving");
