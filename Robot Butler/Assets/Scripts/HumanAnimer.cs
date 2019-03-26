@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,9 +20,9 @@ public class HumanAnimer : MonoBehaviour {
     {
         if (!GetComponent<FamilyWalkControl>() || forceWalk == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, destination.transform.position, speed);
-            Vector3 move = new Vector3(0f, 0f, transform.forward.sqrMagnitude * speed);
-            transform.Translate(move * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, destination.transform.position, speed * Time.deltaTime);
+        //    Vector3 move = new Vector3(0f, 0f, transform.forward.sqrMagnitude * speed);
+        //    transform.Translate(move * Time.deltaTime);
         }
     }
 
