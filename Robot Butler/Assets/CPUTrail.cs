@@ -8,6 +8,7 @@ public class CPUTrail : MonoBehaviour
     private float startTime = 0;
     private float animTime = 0;
     public ParticleSystem poof;
+    public ParticleSystem poof2;
 
     //private float timeElapsed = 0;
     //private float start = 3.5f;
@@ -46,5 +47,6 @@ public class CPUTrail : MonoBehaviour
     public void PlayPoof()
     {
         poof.Play();
+        poof2.Play();
     }
 }
