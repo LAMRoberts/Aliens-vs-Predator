@@ -129,6 +129,6 @@ public class MagazineEvents : MonoBehaviour
         SmokeFX.SetActive(true);
 
         flickerEyes.enabled = true;
-        wobble.wobble_z_amout = 15;
+        wobble.wobble_z_amout = 30;
     }
 }
