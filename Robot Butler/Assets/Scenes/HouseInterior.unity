@@ -1798,7 +1798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d773e5dfc9311f44abd82cd1cce2407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wobble_z_amout: 30
+  wobble_z_amout: 0
   wobble_z_interval: 0.04
 --- !u!1 &273066082
 GameObject:
