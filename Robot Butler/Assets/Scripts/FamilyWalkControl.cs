@@ -11,6 +11,7 @@ public class FamilyWalkControl : MonoBehaviour
     public Transform head;
 
     bool walk = false;
+    bool look = true;
     // Use this for initialization
     void Start()
     {
@@ -25,8 +26,10 @@ public class FamilyWalkControl : MonoBehaviour
     {
         if (magazine != null)
         {
-            Debug.Log("Looking at magazine");
-            head.LookAt(magazine);
+            if (look)
+            {
+                head.LookAt(magazine);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.W))
@@ -55,6 +58,10 @@ public class FamilyWalkControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
+            if(magazine != null)
+            {
+                look = false;
+            }
             if (canPickUp)
                 GetComponent<Animator>().SetTrigger("Pickup");
         }
