@@ -315,7 +315,7 @@ Prefab:
     - target: {fileID: 198952140268421598, guid: 86bf5ea41080346548038b8102b367d0,
         type: 2}
       propertyPath: startDelay.scalar
-      value: 3.65
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 198952140268421598, guid: 86bf5ea41080346548038b8102b367d0,
         type: 2}
@@ -1108,7 +1108,7 @@ Prefab:
     - target: {fileID: 198952140268421598, guid: 86bf5ea41080346548038b8102b367d0,
         type: 2}
       propertyPath: startDelay.scalar
-      value: 5.2
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 198952140268421598, guid: 86bf5ea41080346548038b8102b367d0,
         type: 2}
@@ -1557,7 +1557,7 @@ Prefab:
     - target: {fileID: 198952140268421598, guid: 86bf5ea41080346548038b8102b367d0,
         type: 2}
       propertyPath: startDelay.scalar
-      value: 4.2
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 198952140268421598, guid: 86bf5ea41080346548038b8102b367d0,
         type: 2}
