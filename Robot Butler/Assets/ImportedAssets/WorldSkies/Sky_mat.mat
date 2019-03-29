@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BackTex:
-        m_Texture: {fileID: 2800000, guid: f8330a1fef63c6c469b18699450446cd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9255898e959918d41907de23e8f5f8aa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -47,7 +47,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FrontTex:
-        m_Texture: {fileID: 2800000, guid: 5155772c4edfcc8469969d394a4430ba, type: 3}
+        m_Texture: {fileID: 2800000, guid: dd60a22cc1e7c3e478ca15b6955b0113, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftTex:
