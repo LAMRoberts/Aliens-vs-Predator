@@ -12,7 +12,9 @@ public class FamilyWalkControl : MonoBehaviour
 
     bool walk = false;
     bool look = true;
-    // Use this for initialization
+
+    public float walkDelay = 0;
+
     void Start()
     {
         GetComponent<FamilyWalkControl>().walk = false;
@@ -36,17 +38,7 @@ public class FamilyWalkControl : MonoBehaviour
         {
             if (canWalk)
             {
-                walk = !walk;
-                if (gameObject.name == "Mum")
-                {
-                    GetComponent<Animator>().SetBool("LookAtMag", walk);
-                    GetComponent<Animator>().SetBool("Walk", walk);
-                }
-                else
-                {
-                    GetComponent<Animator>().SetBool("Walk", walk);
-                }
-                GetComponent<HumanAnimer>().forceWalk = walk;
+                StartCoroutine(DelayWalk());
             }
         }
 
@@ -89,4 +81,20 @@ public class FamilyWalkControl : MonoBehaviour
     {
         GetComponent<Animator>().SetTrigger("HandShake");
     }
-}
+
+    private IEnumerator DelayWalk()
+    {
+        yield return new WaitForSeconds(walkDelay);
+        walk = !walk;
+        if (gameObject.name == "Mum")
+        {
+            GetComponent<Animator>().SetBool("LookAtMag", walk);
+            GetComponent<Animator>().SetBool("Walk", walk);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("Walk", walk);
+        }
+        GetComponent<HumanAnimer>().forceWalk = walk;
+    }
+ }
